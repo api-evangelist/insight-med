@@ -1,7 +1,15 @@
 aid: insight-med
-name: insight-med
-description: insight-med is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Insight Lifetech
+description: >-
+  Insight Lifetech (Shenzhen North Star Cardiovascular Medical Technology,
+  北芯生命科技) is a Chinese medical-technology company developing innovative
+  solutions for the precision diagnosis and treatment of cardiovascular
+  diseases. Its portfolio spans coronary physiology and intravascular imaging
+  (FFR, IVUS) and cardiac electrophysiology, including its InsightPFA pulsed-field
+  ablation platform. Backed by Qiming Venture Partners, the company listed on the
+  Shanghai Stock Exchange STAR Market (688712) in February 2026. This is a
+  medical-device manufacturer with no public developer or API surface; the
+  profile is maintained in the API Evangelist network for company intelligence.
 url: https://raw.githubusercontent.com/api-evangelist/insight-med/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +17,31 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-industry: medical-devices
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://insight-med.com/images/logo.svg
 tags:
 - Company
+- Medical Devices
+- Medtech
+- Healthcare
+- Cardiovascular
+- Medical Imaging
+- Electrophysiology
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/insight-med-domain-security.yml
 - type: Website
   url: https://insight-med.com
+- type: About
+  url: https://insight-med.com/about
+- type: Blog
+  url: https://insight-med.com/news
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
